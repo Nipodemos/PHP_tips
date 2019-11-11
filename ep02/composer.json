@@ -1,0 +1,30 @@
+{
+    "name": "nipodemos/phptips001",
+    "description": "Abstração do banco de dados com o DataLayer | PHP Tips #002",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nipodemos",
+            "email": "nipodemos13@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "coffeecode/datalayer": "1.1.2"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*"
+    }
+}
