@@ -1,0 +1,27 @@
+{
+    "name": "nipodemos/phptips001",
+    "minimum-stability": "stable",
+    "description": "Conhecendo o composer e configurando IDE | PHP Tipos #001",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nipodemos",
+            "email": "nipodemos13@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "6.0.*"
+    }
+}
