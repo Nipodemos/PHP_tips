@@ -18,6 +18,7 @@ $router->namespace("Source\App");
 $router->group(null);
 $router->get("/", "Web:home");
 $router->get("/{filter}", "Web:home");
+$router->get("/{filter}/{page}", "Web:home");
 
 /**
  * BLOG
@@ -32,7 +33,16 @@ $router->get("/categoria/{cat_uri}", "Web:category");
  */
 $router->group("contato");
 $router->get("/", "Web:contact");
+$router->post("/", "Web:contact");
+$router->delete("/", "Web:contact");
 $router->get("/{sector}", "Web:contact");
+
+/**
+ * ADMIN
+ * home
+ */
+$router->group("admin");
+$router->get("/", "admin:home");
 
 /**
  * ERRORS

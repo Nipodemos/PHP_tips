@@ -32,6 +32,8 @@ class Web
     {
         echo "<h1> Página contato</h1>";
         var_dump($data);
+        $url = URL_BASE;
+        require __DIR__ . "/../../views/contact.php";
     }
 
     public function error($data)
